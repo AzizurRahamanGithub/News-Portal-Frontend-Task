@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #1a1a2e;
+  --color-accent: #c0392b;
+  --color-secondary: #2c3e50;
+  --color-bg: #f5f3ee;
+  --color-bg-card: #ffffff;
+  --color-text: #1a1a2e;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e0d8;
+  --color-highlight: #2980b9;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-hind), "Noto Sans Bengali", sans-serif;
+  color: var(--color-text);
+}
+
+.bengali-text { line-height: 1.9; }
+
+.keyword-blue {
+  background-color: #1a3a8f;
+  color: white;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.keyword-red {
+  color: #c0392b;
+  font-weight: 700;
+  border-bottom: 2px solid #c0392b;
+}
+
+.media-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.media-badge:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: #c5bfb0; border-radius: 3px; }
